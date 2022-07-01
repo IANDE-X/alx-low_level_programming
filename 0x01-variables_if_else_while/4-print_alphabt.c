@@ -1,20 +1,21 @@
-#include <stdio.h>
+ #include <stdio.h>
 
-/**
+ /**
  * main - Entry point
  *
  * Description: Alphabet except some
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-char alpha;
+  char alpha;
 
-for (alpha = 'a'; alpha <= 'z'; alpha++)
+  for (alpha = 'a'; alpha <= 'z'; alpha++)
 {
 if (alpha != 'e' && alpha != 'q')
-putchar(alpha);
+  putchar(alpha);
 }
 putchar('\n');
 
