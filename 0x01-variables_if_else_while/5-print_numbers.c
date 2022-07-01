@@ -1,19 +1,20 @@
 #include <stdio.h>
 
 /**
+ * main - Entry point
  *
- * main - Print all single digit number
+ * Description: Integers
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	for (digit = 0; digit < 10; digit++)
-		printf("%i", digit);
+int a;
 
-	putchar('\n');
+for (a = 0; a < 10; ++a)
+printf("%i", a);
+putchar('\n');
 
-	return (0);
+return (0);
 }
-
