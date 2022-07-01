@@ -1,30 +1,23 @@
-# include<studio.h>
-/**
-<<<<<<< HEAD
-* main - Print the alphabet in lowercase letters, except for e and q
-*
-* Return: Always 0 (Success)
-*/
+#include <stdio.h>
 
-=======
- * main - Entry point
+/**
+ * main- Entry point
  *
- * Description: Alphabet except some
+ * Description: ALphabetical letters except some
  *
- * Return: Always 0 (Success)
+ * Return: Alway 0 (Success)
  */
->>>>>>> d31e54f3d5d02e811b2b0cbbaf3c50f663c96cd9
+
 int main(void)
 {
-char alpha;
+	char c;
 
-for (alpha = 'a'; alpha <= 'z'; alpha++)
-{
-if (alpha != 'e' && alpha != 'q')
-putchar(alpha);
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		if (c != 'q' && c != 'e')
+			putchar(c);
+	}
+	putchar('\n');
+
+	return (0);
 }
-putchar('\n');
-
-return (0);
-}
-
