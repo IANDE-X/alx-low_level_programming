@@ -1,10 +1,10 @@
-#include <stdio.h>
-
+# include<studio.h>
 /**
 * main - Print the alphabet in lowercase letters, except for e and q
 *
 * Return: Always 0 (Success)
 */
+
 int main(void)
 {
 		char letter;
@@ -18,3 +18,4 @@ int main(void)
 
 	return (0);
 }
+
