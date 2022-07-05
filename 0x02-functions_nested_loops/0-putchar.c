@@ -12,6 +12,6 @@
 
 char _putchar(char c)
 {
-	return (_putchar(1, &c, 1));
+	return (put(1, &c, 1));
 
 }
