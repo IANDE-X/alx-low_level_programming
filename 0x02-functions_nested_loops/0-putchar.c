@@ -10,7 +10,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int_putchar(char c)
+int _putchar(void)
 {
 	int i;
 	char c [] = "_putchar";
