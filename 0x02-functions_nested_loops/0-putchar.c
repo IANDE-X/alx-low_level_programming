@@ -10,8 +10,14 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-char _putchar(char c)
+int_putchar(char c)
 {
-	return (put(1, &c, 1));
-
+	int i;
+	char c [] = "_putchar";
+	for (i =0; i < 8; i++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
+	return (0);
 }
