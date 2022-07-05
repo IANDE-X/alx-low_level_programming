@@ -2,7 +2,8 @@
 
 /**
  * _putchar - writes the character c to stdout
- *
+ * 
+ * main -do coding
  * Return: On success 1.
  */
 
