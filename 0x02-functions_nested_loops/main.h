@@ -1,6 +1,6 @@
-#ifndef HEADER_FILE
+#ifndef MAIN_FILE
 
-#define HEADER_FILE
+#define MAIN_FILE
 
 
 
@@ -32,4 +32,4 @@ void print_times_table(int n);
 
 
 
-#endif /* HEADER_FILE */
+#endif /* MAIN_FILE */
