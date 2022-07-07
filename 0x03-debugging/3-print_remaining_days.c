@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include "main.h"
 
-<<<<<<< HEAD
-#include "main.h"
-=======
 /**
   * print_remaining_days - takes a date and prints how many days are
   * left in the year, taking leap years into account
@@ -38,4 +35,3 @@ void print_remaining_days(int month, int day, int year)
 		}
 	}
 }
->>>>>>> 85eb476d86a3edb49f8e6e397d11054129183aa7
