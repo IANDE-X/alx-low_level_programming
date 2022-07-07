@@ -4,7 +4,6 @@
   * @c: variable of a letter
   * Return: 1 if upper always 0.
   */
-  
 int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
