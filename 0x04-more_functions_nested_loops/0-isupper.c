@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
   * _isupper - uppercase of a letter
   * @c: variable of a letter
