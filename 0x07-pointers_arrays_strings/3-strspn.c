@@ -1,27 +1,30 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strchr - Loctes a character in a string
+ * _strspn - Get the length of a prefix substring
  *
- * @s: The string to check
+ * @s: The character to print
  *
- * @c: The character to find
+ * @accept: Character
  *
- * Return: Pointer to @s or NULL
- *
+ * Return: unsigned int
  */
 
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	while (*s)
-	{
-		s++;
+	unsigned int i, j;
 
-		if (*s == c)
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; accept[j] != s[i]; j++)
 		{
-			return (s);
+			if (accept[j] == '\0')
+				return (i);
 		}
+
 	}
 
-	return (0);
+	return (i);
+
 }
