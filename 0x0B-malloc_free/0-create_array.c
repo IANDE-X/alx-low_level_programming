@@ -1,5 +1,4 @@
 #include <stdlib.h>
-
 /**
  * create_array - Create an array, and initialiazes it with a specific
  * char @c
@@ -11,7 +10,6 @@
  * Return: Pointer to the array created OR NULL if @size = 0 OR
  * the creation of the array fails
  */
-
 char *create_array(unsigned int size, char c)
 {
 	char *arr;
