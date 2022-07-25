@@ -7,7 +7,7 @@
  *
  * @s2: A string to be concatenated
  *
- * Return: Pointer to newly allocated memory
+ * *Return: Pointer to newly allocated memory
  * which is equal to @s1 + @s2 (SUCCESS) OR
  * NULL (FAILURE)
  */
