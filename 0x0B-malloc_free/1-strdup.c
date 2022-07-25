@@ -5,7 +5,7 @@
  *
  * @str: The string to be copied
  *
- * Return: Pointer to allocated memory containing copy of @str (SUCCESS)
+ * *Return: Pointer to allocated memory containing copy of @str (SUCCESS)
  * OR NULL if @str is empty (FAILURE) OR
  * NUL if insufficient memory was available
  */
