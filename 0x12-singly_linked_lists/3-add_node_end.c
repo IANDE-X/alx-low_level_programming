@@ -1,68 +1,52 @@
+#include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 #include "lists.h"
-#include "strlen.c"
-
-list_t *createNewNode(const char *str);
 
 /**
- * add_node_end - dds a new node at the end of a list_t list
- * @head: douple pointer to the head of the linked list
- * @str: pointer to string to be assigned to the added node's str property
- * Return: pointer to the new node (SUCCESS) OR
- * NULL, if there is insufficent memory available (FAILURE)
+ * add_node_end - function that adds a new node at the end of a list_t list
+ * @head: Const double pointer of structure list_t for beginning
+ * @str: Const char pointer for data to be added
+ * Return: List with new node for list_t list, NULL if failed
  */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *current_node = *head;
 
-	if (current_node)
-	{
-		while (current_node)
-		{
-			if (current_node->next)
-			{
-				current_node = current_node->next;
-			}
-			else
-			{
-				current_node->next = createNewNode(str);
-				return (current_node->next);
-			}
-		}
-	}
-	else
-	{
-		*head = createNewNode(str);
-	}
+	unsigned int i;
+	list_t *new;
+	list_t *temp;
 
-	return (*head);
-}
+	new  = malloc(sizeof(list_t));
 
-/**
- * createNewNode - create a new list_t list node
- * @str: pointer to string to be assigned to the created node's str property
- * Return: pointer to the new node (SUCCESS) OR
- * NULL, if there is insufficent memory available (FAILURE)
- */
-
-list_t *createNewNode(const char *str)
-{
-	list_t *new_node_ptr = malloc(sizeof(list_t));
-
-	if (!new_node_ptr)
+	if (str == NULL)
 		return (NULL);
 
-	new_node_ptr->str = strdup(str);
-
-	if (!(new_node_ptr->str))
-	{
-		free(new_node_ptr);
+	if (new == NULL)
 		return (NULL);
+
+	for (i = 0; str[i]; i++)
+		;
+
+	if (*head == NULL)
+	{
+		*head = new;
+		new->len = i;
+		new->str = strdup(str);
+		new->next = NULL;
+		return (new);
 	}
 
-	new_node_ptr->len = _strLen(new_node_ptr->str);
-	new_node_ptr->next = NULL;
+	temp = *head;
 
-	return (new_node_ptr);
+	while (temp->next != NULL)
+		temp = temp->next;
+
+	temp->next = new;
+
+	new->len = i;
+	new->str = strdup(str);
+	new->next = NULL;
+
+	return (new);
+
 }
