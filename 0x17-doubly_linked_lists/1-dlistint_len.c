@@ -6,7 +6,6 @@
  * Return: number of nodes of dlistint_t list
  */
 
-
 size_t dlistint_len(const dlistint_t *h)
 {
 	size_t num_of_nodes = 0;
@@ -14,7 +13,7 @@ size_t dlistint_len(const dlistint_t *h)
 
 	if (!h)
 		return (num_of_nodes);
-
+	
 	num_of_nodes++;
 	current_node = h->next;
 
