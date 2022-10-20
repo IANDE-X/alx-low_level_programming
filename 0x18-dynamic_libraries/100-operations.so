@@ -1,3 +1,4 @@
+#include"main.h"
 /**
  * add - Computes the sum of two numbers
  * @left: The left-sided number
